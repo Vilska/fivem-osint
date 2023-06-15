@@ -34,7 +34,7 @@ const discordData = async (res, id) => {
         })
         res.status(200).json(data.data)
     } catch(err) {
-        res.status(403).json({msg: "Käyttäjää ei löytynyt"})
+        res.status(403).json({msg: "User was not found!"})
     }
 }
 
@@ -48,10 +48,10 @@ const steamData = async (res, id) => {
         res.status(200).json(data.data.response.players[0])
     } catch(err) {
         console.log(err)
-        res.status(403).json({msg: "Käyttäjää ei löytynyt"})
+        res.status(403).json({msg: "User was not found!"})
     }
 }
 
 app.listen("8000", () => {
-    console.log("FiveM-Osint päällä")
+    console.log("FiveM-Osint is running!")
 })
