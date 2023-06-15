@@ -89,6 +89,7 @@ html, body
     border-radius: 5px;
     transition: background-color .2s ease-in-out;
     color: #fafafa;
+    letter-spacing: 1px;
 }
 
 .main .input button:hover
